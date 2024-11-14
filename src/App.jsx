@@ -1,17 +1,16 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Link,  } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/home';
 import MentionsLegales from './pages/mentions';
 import './App.css';
 
 function App() {
   return (
-    <Router basename= "/SARL-Delacourt">
+    <Router>
       <div>
         {/* Navigation avec les liens */}
         <nav>
           <ul>
-            {/* Lien vers l'ancrage de l'accueil */}
             <li>
               <Link to="/" onClick={() => scrollToSection('header')}>
                 Accueil
@@ -61,4 +60,3 @@ function scrollToSection(id) {
 }
 
 export default App;
-
